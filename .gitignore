@@ -3,7 +3,11 @@
 *.fdb*
 *.fls
 *.log
+*.out
 
 # output
 *.dvi
 *.pdf
+
+# templates
+*.zip
