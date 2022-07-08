@@ -1,0 +1,9 @@
+# latex
+*.aux
+*.fdb*
+*.fls
+*.log
+
+# output
+*.dvi
+*.pdf
