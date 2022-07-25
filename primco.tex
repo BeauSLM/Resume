@@ -1,0 +1,274 @@
+% TODO: references
+%-------------------------
+% Resume in Latex
+% Author : Tejas Khairnar
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+
+
+% Set the margins
+\geometry{left=0.85cm, top=0.8cm, right=0.85cm, bottom=0.2cm}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \hspace{-3mm}{#1}:\hspace{1mm} & \hspace*{0pt}\hfill{\footnotesize{ #3}} \vspace{-0.5mm}\\ \hspace{-2.9mm}#2 
+    \end{tabular*}
+    \vspace{0mm}
+}
+
+\newcommand{\resumeExp}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1.2mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.1mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.5mm}
+}
+
+\newcommand{\resumeEdu}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.3mm} \small\textbf{#1} & \footnotesize{#3}\vspace{-1mm} \\
+        \hspace{-4.3mm} \footnotesize{#2} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-3.2mm}
+}
+
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm,itemsep=-2.5mm]}
+
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-1.5mm}}
+
+\renewcommand{\arraystretch}{1}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+\newcommand{\name}{Beau McCartney} % Your Name
+\newcommand{\phone}{403-619-4309} % Your Phone Number
+\newcommand{\email}{business@beaumccartney.xyz} %Email 1
+\newcommand{\github}{BeauSLM} %Github
+\newcommand{\website}{beaumccartney.xyz} %Website
+\newcommand{\linkedin}{beau-mccartney-247b0820a/} %linkedin
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+
+%----------HEADING-----------------
+\begin{center}
+    \LARGE{\textbf{\name}}
+\end{center}
+\vspace{-6.5mm}
+\begin{center}
+    \small{\href{https://github.com/\github}{\faGithub \hspace{0.2mm} github.com/\github} | \href{https://www.linkedin.com/in/\linkedin/}{\faLinkedinSquare \hspace{0.2mm} linkedin} | \href{mailto:\email}{\faSend \hspace{0.2mm} \email} | \faPhone \hspace{0.2mm} +1-\phone }
+\end{center}
+\vspace{-3mm}
+
+%-----------EDUCATION-----------------
+
+\vspace{-2.5mm}
+\section{Education}
+
+\resumeSubHeadingListStart
+\resumeEdu
+{University of Calgary} 
+{Combined BSc Software Engineering and BComm - 4th Year} 
+{September 2019 - Present} %Event Dates
+{GPA: 3.62/4}
+\resumeSubHeadingListEnd
+\vspace{-3.5mm}
+
+\resumeSubHeadingListStart
+\resumeEdu
+{Royal Conservatory of Music} 
+{Completed RCM 8 in Double Bass} 
+{September 2016 - May 2019} %Event Dates
+{}
+\resumeSubHeadingListEnd
+\vspace{-3.5mm}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeExp
+{Code Ninjas Marda Loop}
+{Programming Instructor / Esports Coach}
+{July 2021 - Present}
+{Calgary, Canada}
+\resumeItemListStart
+\item[$\bullet$] Give instruction in coding, computer literacy, and computer science fundamentals to students aged 7+
+\item[$\bullet$] Give instruction in game development using Scratch, Javascript, Roblox Studio (lua), and Unity (C\#)
+\item[$\bullet$] Coach Overwatch and Fortnite XPLeague Silver Teams (Esports)
+\item[$\bullet$] Instruct Summer Camps: Website Creation, Roblox Studio, Youtube Content Creation
+\item[$\bullet$] Maintain proprietary Javascript Discord Bot that registers new students on Scratch, CodeNinjas, and Typing.com
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProject
+{Project 1} %Project Name
+{CLI Snake Game} %Project Name, Location Name
+{January 2022} %Event Dates
+{\href{https://github.com/BeauSLM/cli_snake_game}{github.com/BeauSLM/cli\_snake\_game}} %Website
+\resumeItemListStart
+\item[$\bullet$] A colorful ASCII snake game written in rust
+\item[$\bullet$] Uses a circular queue to model the snake
+\item[$\bullet$] Colorful ASCII TUI using termion
+\item[$\bullet$] ASCII art intro, game-over, and victory screens
+\resumeItemListEnd
+
+\resumeProject
+{Project 2}
+{Clown Proxy} %Project Name, Location Name
+{May 2022} %Event Dates
+{\href{https://github.com/BeauSLM/clown_proxy}{github.com/BeauSLM/clown\_proxy}} 
+\resumeItemListStart
+\item[$\bullet$] HTTP proxy written in rust
+\item[$\bullet$] Fully asynchronous, managing tasks with Tokio
+\item[$\bullet$] Substitutes all instances of the word "happy" with "silly", preserving the original case
+\item[$\bullet$] Replaces all .jpg images with one of two randomly chosen images of a happy clown
+\item[$\bullet$] Unit tests validate string substitution functionality
+\resumeItemListEnd
+
+\resumeProject
+{Project 3} %Project Name
+{Flight Management System} %Project Name, Location Name
+{June 2021} %Event Dates
+{\href{https://github.com/BeauSLM/Flight-Management}{github.com/BeauSLM/Flight-Management}} %Website
+\resumeItemListStart
+\item[$\bullet$] A simple command-line flight management simulator in C++
+\item[$\bullet$] Deserializes the information for a flight from a specially-formatted plain-text file
+\item[$\bullet$] User can view the flight/passenger info, add/remove passengers, and serialize the passenger map
+\resumeItemListEnd
+
+\resumeProject
+{Project 4} %Project Name
+{dewit} %Project Name, Location Name
+{June 2022} %Event Dates
+{\href{https://github.com/BeauSLM/dewit}{github.com/BeauSLM/dewit}} %Website
+\resumeItemListStart
+\item[$\bullet$] Simple REST api to query and maintain a to-do list backed by a SQlite database, written in Rust + Rocket
+\item[$\bullet$] Formats information in JSON
+\item[$\bullet$] Supports adding (by providing a JSON), removing, and deleting TODO items
+\item[$\bullet$] TODO items can be queried by priority
+\resumeItemListEnd
+
+\resumeProject
+{Project 5} %Project Name
+{Continental Conquest} %Project Name, Location Name
+{December 2021} %Event Dates
+{\href{https://github.com/BeauSLM/Continental-Conquest}{github.com/BeauSLM/Continental-Conquest}} %Website
+\resumeItemListStart
+\item[$\bullet$] MMORPG character stat website backed by a MySQL database
+\item[$\bullet$] Website done in PHP, REST api done in Django
+\item[$\bullet$] Rest api documented with Postman
+\item[$\bullet$] Group Project
+\resumeItemListEnd
+
+\resumeProject
+{Other Projects}{}{}{}
+\vspace{-3.5mm}
+\resumeItemListStart
+\item[$\bullet$] \textbf{Project 6 \raisebox{-0.3mm}{\href{https://github.com/BeauSLM/beaumccartney.xyz}{\footnotesize\faExternalLink}} :} Email server, encrypted with https
+\item[$\bullet$] \textbf{Project 7 \raisebox{-0.3mm}{\href{https://github.com/BeauSLM/.dotfiles}{\footnotesize\faExternalLink}} :} My linux dotfiles
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-5.5mm}
+
+
+\section{Technical Skills}
+\vspace{0.2mm}
+
+\small{\begin{tabular*}{\textwidth}[t]{p{\textwidth}}
+
+\hspace{-3.1mm}{\textbf{ Programming languages:} C++, C, Python, C\#, Java, Rust, Processing, x86, MIPS32, Lua, PHP, Javascript}\\
+\hspace{-3.1mm}{\textbf{ Markup Languages:} HTML, CSS, YAML, INI, TOML}\\
+\hspace{-3.1mm}{\textbf{ Frameworks:} Serde, Bevy, Rocket, Tokio, JUnit, Django}\\
+\hspace{-3.1mm}{\textbf{ Miscellaneous:} MySQL/SQlite, Vultr, Git, Shell (Posix, Bash, ZSH, Fish), Latex, Linux}\\
+\end{tabular*}}
+
+\vspace{-2.5mm}
+\section{Coursework}
+\vspace{0.2mm}
+
+
+\small{\begin{tabular*}{\textwidth}[t]{p{\textwidth}}
+\hspace{-3.1mm}\textbf{ Software Engineering:}{ Object Oriented Design, Agile Development, Software Testing/Lifecycle, Requirements Engineering}\\
+\hspace{-3.1mm}\textbf{ Computer Engineering:}{ Digital Circuits, Signals and Transformers, Embedded Systems, Computer Organization}\\
+\hspace{-3.1mm}\textbf{ Computer Science:}{ Data Structures and Algorithms, Databases, Operating Systems, Computer Networks}\\
+\hspace{-3.1mm}\textbf{ Mathematics:}{ Integral and Differential Calculus, Discrete Math, Probability and Statistics, Linear Algebra}\\
+\end{tabular*}}
+
+\vspace{-2.5mm}
+
+%-------------------------------------------
+\end{document}
+
