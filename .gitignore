@@ -11,3 +11,5 @@
 
 # templates
 *.zip
+
+.auctex-auto/
